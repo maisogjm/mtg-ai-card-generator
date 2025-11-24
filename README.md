@@ -1,6 +1,8 @@
 # Magic: The Gathering Card Generator
 Generate custom MTG cards with Pydantic-validated structured output and AI-generated artwork.
 
+Deployment on Hugging Face Spaces: [Magic: The Gathering Card Generator](https://huggingface.co/spaces/kestrel256/mtg-ai-card-generator)
+
 ## Some Requirements
 To try out this MTG card generator, you'll need at the very least an OpenAI API key, since images are generated with OpenAI models via OpenAI's API. The default LLM for generating the card specifications (e.g., mana cost, power, toughness) is `gpt-4.1-nano-2025-04-14`, and if you want to use that LLM then that's another reason you'll also need that OpenAI API key. If you want to try some of the LLMs outside of OpenAI like Llama or Grok-4, you'll need an OpenRouter API key in addition to the OpenAI API key, since interactions with these other LLM models are routed through OpenRouter. The Python code assumes that OpenAI API key and the OpenRouter API key are stored in a local `.env` file.
 
